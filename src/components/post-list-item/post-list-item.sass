@@ -1,0 +1,55 @@
+$var1: #696969
+$var2: #212529
+$var3: #FF8C00
+
+.app-list-item 
+	font-size: 1.25rem
+	button 
+		width: 35px
+		height: 35px
+		margin: 3px
+		font-size: 17px
+		border: none
+		cursor: pointer
+		&:focus 
+			box-shadow: none
+			outline: none
+		
+	
+	.btn-star 
+		color: $var1
+	
+	.btn-trash 
+		color: red
+	
+	.fa-heart 
+		width: 35px
+		height: 35px
+		text-align: center
+		line-height: 35px
+		font-size: 16px
+		color: red
+		transition: 0.3s all
+		transform: translateX(30px)
+		opacity: 0
+	
+	&-label 
+		display: block
+		line-height: 35px
+		cursor: pointer
+		user-select: none
+	
+	/*  */
+	&.like .fa-heart 
+		opacity: 1
+		transform: translateX(0px)
+	
+	&.important .app-list-item-label 
+		color: $var2
+		font-weight: bold
+		transition: 0.1s ease
+	
+	&.important .btn-star 
+		color: $var3
+	
+
